@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Projects — Priyanshu Pal</title>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+/* Projects hero (keeps previous style) */
+.projects-hero { max-width:1100px; margin:40px auto 10px; text-align:center; }
+.projects-hero h1 { font-family:'Playfair Display', serif; font-size:72px; color:var(--text); margin:0 0 12px; }
+.projects-hero p { max-width:900px; margin:0 auto; color:var(--muted); line-height:1.8; font-size:16px; text-align:left;  
+display:block; margin-bottom:18px; white-space:normal;
+}
+
+/* Slider */
+.slider-wrap { max-width:1100px; margin:48px auto; display:flex; flex-direction:column; align-items:center; }
+.slider { position:relative; width:100%; overflow:hidden; }
+.track { display:flex; gap:18px; transition: transform 600ms cubic-bezier(.22,.9,.36,1); will-change: transform; }
+.slide { position:relative; flex:0 0 340px; width:340px; height:220px; border-radius:12px; overflow:hidden; background:rgba(255,255,255,0.02); box-shadow:0 14px 36px rgba(0,0,0,0.45); }
+.slide img { width:100%; height:100%; object-fit:cover; display:block; }
+
+/* Caption overlay: clean, semi-transparent, bottom center */
+.slide .caption { position:absolute; left:50%; transform:translateX(-50%); bottom:12px; background:rgba(0,0,0,0.55); color:#fff; padding:8px 12px; border-radius:8px; font-size:14px; max-width:90%; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.5); }
+
+/* nav and dots */
+.nav { position:absolute; top:50%; left:0; right:0; display:flex; justify-content:space-between; transform:translateY(-50%); pointer-events:none; }
+.nav button { pointer-events:all; background:rgba(255,255,255,0.06); border:0; color:var(--text); padding:10px 12px; border-radius:10px; cursor:pointer; margin:0 8px; }
+.dots { display:flex; gap:8px; margin-top:14px; }
+.dots button { width:10px; height:10px; border-radius:50%; background:rgba(255,255,255,0.12); border:0; cursor:pointer; }
+.dots button.active { background:var(--text); width:12px; height:12px; }
+
+/* responsive tweaks */
+@media (max-width:980px) { .slide { flex:0 0 300px; width:300px; height:200px } .projects-hero p { text-align:center 
+display:block; margin-bottom:18px; white-space:normal;
+} .projects-hero h1{font-size:48px} }
+@media (max-width:640px) { .slide { flex:0 0 240px; width:240px; height:160px } .projects-hero h1{font-size:36px} .slide .caption{font-size:13px;padding:6px 10px} }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="site-title">Priyanshu's Portfolio</div>
+      <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="https://drive.google.com/file/d/1mpVzU7LfxEKOe9nb4vT09Wj3CjYOME5T/view?usp=sharing" target="_blank">Download Resume</a></nav>
+    </header>
+
+    <main>
+      <section class="projects-hero">
+  <h1>Projects</h1>
+  <p>My portfolio showcases a range of game development and programming projects built using Unity, Unreal Engine, C, C++, Python, and Raylib. These projects highlight my ability to design engaging gameplay mechanics, implement algorithms, and create interactive applications. From classic logic-based games like Sudoku and Snake, to creative demos such as Glowing Bulb and Pink Panther, and more advanced Unity-based projects like Infinity Run and Rocket Boost, each project reflects my focus on problem-solving, clean game logic, and player experience.</p>
+
+  <p>Through these works, I have demonstrated skills in data structures, algorithm design, debugging, physics-based mechanics, and user interaction, while experimenting with both 2D and 3D environments. Collectively, my projects represent not only my technical foundation but also my passion for creating games that are fun, interactive, and well-structured.</p>
+
+  <p>Across my projects, I have primarily worked as the lead developer, taking ownership of designing game logic, writing code, and integrating gameplay features using Unity, Unreal Engine, C, C++, Python, and Raylib. Most of my projects were independent works, which meant I was responsible for the entire development cycle—from concept and coding to debugging and final presentation.</p>
+
+  <p>To achieve my goals, I collaborated with mentors, online developer communities, and technical resources to overcome challenges and refine my implementations. I also participated in internships and virtual industry experiences (Electronic Arts, Walmart Global Tech, GRASS Technology, YBI Foundation), where I had the opportunity to align my work with real-world industry practices.</p>
+
+  <p>The outcome of these projects is a portfolio of playable games, interactive demos, and applications that not only showcase my technical skills in game development and algorithms, but also highlight my ability to learn independently, solve problems, and deliver complete, functional solutions.</p>
+
+</section>
+
+      <section class="slider-wrap" aria-label="Project slider">
+        <div class="slider">
+          <div class="track" id="track">
+
+            <div class="slide">
+              <a href="https://youtu.be/rkYLcJMVlM8" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/rkYLcJMVlM8/hqdefault.jpg" alt="Rocket Booster — Unity Project">
+              </a>
+              <div class="caption">Rocket Booster — Unity Project</div>
+            </div>
+
+            <div class="slide">
+              <a href="https://youtu.be/wgX9e7MRWfY" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/wgX9e7MRWfY/hqdefault.jpg" alt="Dapper Dasher — C++ & Raylib">
+              </a>
+              <div class="caption">Dapper Dasher — C++ & Raylib</div>
+            </div>
+
+            <div class="slide">
+              <a href="https://youtu.be/-mIfUBakVwg" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/-mIfUBakVwg/hqdefault.jpg" alt="Spawning System — Unity Demo">
+              </a>
+              <div class="caption">Spawning System — Unity Demo</div>
+            </div>
+
+            <div class="slide">
+              <a href="https://youtu.be/H-vxlOt4Spo" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/H-vxlOt4Spo/hqdefault.jpg" alt="Short: Game Demo Clip">
+              </a>
+              <div class="caption">Short: Game Demo Clip</div>
+            </div>
+
+            <div class="slide">
+              <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#222;border-radius:12px;">
+                <h3 style="color:white;text-align:center;padding:20px;">More projects will add soon</h3>
+              </div>
+              <div class="caption">Coming soon</div>
+            </div>
+          </div> <!-- track -->
+          <div class="nav"><button id="prev">&#9664;</button><button id="next">&#9654;</button></div>
+        </div>
+        <div class="dots" id="dots"></div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">Made with ❤️ — Priyanshu Pal</footer>
+  </div>
+
+<script>
+// slider: autoplay 1.8s, arrows, dots, swipe, clean caption overlay
+(function(){
+  const track = document.getElementById('track');
+  const slides = Array.from(track.children);
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  const dotsContainer = document.getElementById('dots');
+
+  let index = 0;
+  const total = slides.length;
+
+  // create dots
+  slides.forEach((_,i)=>{ const b = document.createElement('button'); b.addEventListener('click', ()=> { index = i; go(); resetAuto(); }); dotsContainer.appendChild(b); });
+
+  function slideWidth(){ return slides[0].getBoundingClientRect().width + 18; }
+
+  function go(animate = true){
+    if(!animate) track.style.transition = 'none'; else track.style.transition = 'transform 600ms cubic-bezier(.22,.9,.36,1)';
+    track.style.transform = 'translateX(' + (-slideWidth()*index) + 'px)';
+    updateDots();
+  }
+
+  function updateDots(){
+    Array.from(dotsContainer.children).forEach((d,i)=> d.classList.toggle('active', i===index));
+  }
+
+  function next(){ index = (index + 1) % total; go(); }
+  function prev(){ index = (index - 1 + total) % total; go(); }
+
+  nextBtn.addEventListener('click', ()=>{ next(); resetAuto(); });
+  prevBtn.addEventListener('click', ()=>{ prev(); resetAuto(); });
+
+  // swipe support
+  let startX=0, moved=0;
+  track.addEventListener('touchstart', (e)=>{ startX = e.touches[0].clientX; track.style.transition='none'; });
+  track.addEventListener('touchmove', (e)=>{ moved = e.touches[0].clientX - startX; track.style.transform = 'translateX(' + ( -slideWidth()*index + moved ) + 'px)'; });
+  track.addEventListener('touchend', ()=>{ const threshold = 50; if(moved > threshold) prev(); else if(moved < -threshold) next(); else go(); moved = 0; resetAuto(); });
+
+  // autoplay
+  let timer = null;
+  function startAuto(){ timer = setInterval(next, 1800); }
+  function resetAuto(){ if(timer) clearInterval(timer); startAuto(); }
+
+  window.addEventListener('load', ()=>{ go(false); startAuto(); window.addEventListener('resize', ()=> go(false)); });
+
+  // pause on hover
+  track.parentElement.addEventListener('mouseenter', ()=> { if(timer) clearInterval(timer); });
+  track.parentElement.addEventListener('mouseleave', ()=> { resetAuto(); });
+
+})();
+</script>
+
+</body>
+</html>
